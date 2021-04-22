@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-
+  hidden = false;
+  isActive = true;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
   }
 
 }

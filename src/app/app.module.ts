@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatBadgeModule } from '@angular/material/badge';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +21,8 @@ import { NewsComponent } from './components/screen/home/news/news.component';
 import { ArticleComponent } from './components/screen/article/article.component';
 import { ScrollDirective } from './components/share/directives/scroll.directive';
 import { NavBarComponent } from './components/screen/nav-bar/nav-bar.component';
+
+
 
 @NgModule({
   declarations: [
@@ -39,8 +44,10 @@ import { NavBarComponent } from './components/screen/nav-bar/nav-bar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
+    MatBadgeModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
