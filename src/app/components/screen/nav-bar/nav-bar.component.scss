@@ -1,7 +1,23 @@
 .navbar {
   .search-box {
-    width: 360px;
-    max-width: 360px;
+    @media (min-width: 1300px) {
+      width: 320px;
+      max-width: 320px;
+    }
+
+    @media (min-width: 960px) and (max-width: 1300px) {
+      width: 300px;
+      max-width: 300px;
+    }
+
+    @media (min-width: 540px) and (max-width: 1290px) {
+      width: 100px;
+      max-width: 100px;
+      .navbar-brand {
+        margin: 0.3rem;
+      }
+    }
+
     .search-input {
       max-width: 280px;
       height: 40px;
@@ -15,16 +31,49 @@
         }
       }
     }
+
+    @media (min-width: 540px) and (max-width: 1300px) {
+      .search-input {
+        width: 40px;
+        padding: 0.5rem !important;
+        input {
+          display: none !important;
+        }
+      }
+    }
   }
   .common {
-    width: 6000px;
-    max-width: 600px;
+    @media (min-width: 1300px) {
+      .btn-custom {
+        &.active {
+          &::after {
+            bottom: -12px;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 960px) {
+      width: 600px;
+      max-width: 600px;
+    }
+
+    @media (min-width: 960px) and (max-width: 1300px) {
+      width: 450px;
+      max-width: 450px;
+    }
+
+    @media (min-width: 540px) and (max-width: 960px) {
+      width: 300px;
+      max-width: 300px;
+    }
+
     .nav-item {
       width: 20%;
       text-align: center;
     }
     .btn-custom {
-      padding: 0.675rem 0.75rem;
+      padding: 0.275rem 0.75rem;
       border-radius: 0.25rem;
       text-align: center;
       &:hover {
@@ -36,7 +85,7 @@
         &::after {
           content: "";
           position: absolute;
-          bottom: -10px;
+          bottom: -16px;
           left: 0;
           right: 0;
           border-bottom: 3px solid #1877f2;
@@ -48,8 +97,16 @@
     }
   }
   .personal {
-    width: 360px;
-    max-width: 360px;
+    @media (min-width: 1300px) {
+      width: 320px;
+      max-width: 320px;
+    }
+
+    @media (min-width: 540px) and (max-width: 1290px) {
+      width: 192px;
+      max-width: 192px;
+    }
+
     .nav-item {
       margin-left: 0.5rem;
       .nav-link {
@@ -57,7 +114,6 @@
         background-color: #f0f2f5;
         width: 40px;
         height: 40px;
-        line-height: 24px;
         cursor: pointer;
         &:hover {
           background-color: #d6d6d6;
@@ -65,6 +121,9 @@
       }
     }
     .user {
+      @media (min-width: 540px) and (max-width: 1290px) {
+        display: none !important;
+      }
       .nav-link {
         width: 100px;
         background-color: white;
