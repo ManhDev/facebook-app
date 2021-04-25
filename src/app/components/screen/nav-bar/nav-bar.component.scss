@@ -14,7 +14,7 @@
       width: 100px;
       max-width: 100px;
       .navbar-brand {
-        margin: 0.3rem;
+        margin-right: 0.3rem;
       }
     }
 
@@ -43,19 +43,9 @@
     }
   }
   .common {
-    @media (min-width: 1300px) {
-      .btn-custom {
-        &.active {
-          &::after {
-            bottom: -12px;
-          }
-        }
-      }
-    }
-
     @media (min-width: 960px) {
-      width: 600px;
-      max-width: 600px;
+      width: 720px;
+      max-width: 720px;
     }
 
     @media (min-width: 960px) and (max-width: 1300px) {
@@ -85,7 +75,7 @@
         &::after {
           content: "";
           position: absolute;
-          bottom: -16px;
+          bottom: -12px;
           left: 0;
           right: 0;
           border-bottom: 3px solid #1877f2;
