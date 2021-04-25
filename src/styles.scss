@@ -10,6 +10,9 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: #f0f2f5;
 }
+img {
+  max-width: 100%;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -17,6 +20,15 @@ a {
     color: inherit;
     text-decoration: none;
   }
+}
+h1,
+h2,
+h3,
+h4.h5,
+h6,
+p {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 button {
@@ -39,4 +51,14 @@ button {
 }
 .material-icons.md-30 {
   font-size: 30px;
+}
+.list-group {
+  .list-group-item {
+    background: none;
+    border: none;
+    padding: 0.3rem 0.5rem;
+    &:hover {
+      background: rgb(230, 230, 230);
+    }
+  }
 }
