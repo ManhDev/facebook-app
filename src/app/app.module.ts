@@ -10,7 +10,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogLoadingComponent } from './components/share/dialog-loading/dialog-loading.component';
 import { FormPostsComponent } from './components/share/form-posts/form-posts.component';
 import { LoginComponent } from './components/screen/login/login.component';
-import { LogoutComponent } from './components/screen/logout/logout.component';
 import { SidebarComponent } from './components/screen/sidebar/sidebar.component';
 import { FooterComponent } from './components/screen/footer/footer.component';
 import { NotFoundComponent } from './components/screen/not-found/not-found.component';
@@ -22,8 +21,11 @@ import { ComingSoonComponent } from './components/screen/coming-soon/coming-soon
 import { CommunityComponent } from './components/screen/community/community.component';
 import { NewsComponent } from './components/screen/news/news.component';
 import { PostStatusComponent } from './components/share/post-status/post-status.component';
-
-
+import { AddCommentComponent } from './components/share/add-comment/add-comment.component';
+import { LikeFunctionComponent } from './components/share/like-function/like-function.component';
+import { CommentFunctionComponent } from './components/share/comment-function/comment-function.component';
+import { HomeComponent } from './components/screen/home/home.component';
+import { SignUpComponent } from './components/screen/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,6 @@ import { PostStatusComponent } from './components/share/post-status/post-status.
     DialogLoadingComponent,
     FormPostsComponent,
     LoginComponent,
-    LogoutComponent,
     SidebarComponent,
     FooterComponent,
     NotFoundComponent,
@@ -42,14 +43,20 @@ import { PostStatusComponent } from './components/share/post-status/post-status.
     ScrollDirective,
     NavBarComponent,
     ComingSoonComponent,
-    PostStatusComponent
+    PostStatusComponent,
+    AddCommentComponent,
+    LikeFunctionComponent,
+    CommentFunctionComponent,
+    HomeComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
     MatBadgeModule,
     HttpClientModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule, AppRoutingModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post-status.component.scss']
 })
 export class PostStatusComponent implements OnInit {
-
+  user = {
+    name: 'Husky',
+    image: 'https://petmaster.vn/petroom/wp-content/uploads/2020/03/thanh-bieu-cam-cho-husky.jpg'
+  }
   constructor() { }
 
   ngOnInit(): void {

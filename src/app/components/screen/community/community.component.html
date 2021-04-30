@@ -1,60 +1,54 @@
-<div class="new d-flex align-items-center justify-content-between">
-    <div class="card">
-        <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
-            class="card-img-top" alt="news">
-        <div class="card-image-user">
-            <img src="https://kenh14cdn.com/thumb_w/600/2020/9/26/photo-16-16011088147401849082420-crop-16011090302842010698918.png"
-                alt="user" width="28px" height="28px" class="rounded-circle custom-border">
-        </div>
-        <p class="name font-weight-bold text-white">User Name</p>
+<div class="main">
+    <div class="sidebar-left">
+        <app-sidebar></app-sidebar>
     </div>
-    <div class="card">
-        <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
-            class="card-img-top" alt="news">
-        <div class="card-image-user">
-            <img src="https://kenh14cdn.com/thumb_w/600/2020/9/26/photo-16-16011088147401849082420-crop-16011090302842010698918.png"
-                alt="user" width="28px" height="28px" class="rounded-circle custom-border">
+    <div class="screen">
+        <div class="new d-flex align-items-center justify-content-between">
+            <ng-container *ngFor="let post of posts">
+                <div class="card">
+                    <img [src]="post.image" class="card-img-top" alt="news">
+                    <div class="card-image-user">
+                        <img [src]="post.avatar" alt="user" width="28px" height="28px"
+                            class="rounded-circle custom-border">
+                    </div>
+                    <p class="name font-weight-bold text-white">{{post.name}}</p>
+                </div>
+            </ng-container>
         </div>
-        <p class="name font-weight-bold text-white">User Name</p>
-    </div>
-    <div class="card">
-        <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
-            class="card-img-top" alt="news">
-        <div class="card-image-user">
-            <img src="https://kenh14cdn.com/thumb_w/600/2020/9/26/photo-16-16011088147401849082420-crop-16011090302842010698918.png"
-                alt="user" width="28px" height="28px" class="rounded-circle custom-border">
+        <div class="post-status mt-3">
+            <app-post-status></app-post-status>
         </div>
-        <p class="name font-weight-bold text-white">User Name</p>
-    </div>
-    <div class="card">
-        <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
-            class="card-img-top" alt="news">
-        <div class="card-image-user">
-            <img src="https://kenh14cdn.com/thumb_w/600/2020/9/26/photo-16-16011088147401849082420-crop-16011090302842010698918.png"
-                alt="user" width="28px" height="28px" class="rounded-circle custom-border">
-        </div>
-        <p class="name font-weight-bold text-white">User Name</p>
-    </div>
-    <div class="card">
-        <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
-            class="card-img-top" alt="news">
-        <div class="card-image-user">
-            <img src="https://kenh14cdn.com/thumb_w/600/2020/9/26/photo-16-16011088147401849082420-crop-16011090302842010698918.png"
-                alt="user" width="28px" height="28px" class="rounded-circle custom-border">
-        </div>
-        <p class="name font-weight-bold text-white">User Name</p>
-    </div>
-    <div class="card">
-        <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
-            class="card-img-top" alt="news">
-        <div class="card-image-user">
-            <img src="https://kenh14cdn.com/thumb_w/600/2020/9/26/photo-16-16011088147401849082420-crop-16011090302842010698918.png"
-                alt="user" width="28px" height="28px" class="rounded-circle custom-border">
-        </div>
-        <p class="name font-weight-bold text-white">User Name</p>
-    </div>
+        <div class="meeting-room mt-3 p-3 shadow-sm bg-white rounded d-flex align-items-center">
+            <button type="button" class="btn btn-outline-info bg-white d-flex align-items-center rounded-pill mr-2">
+                <span class="material-icons text-info">videocam</span>
+                <p class="text-info ml-2">Tạo phòng họp mặt</p>
+            </button>
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
+                    alt="user" width="40px" height="40px" class="rounded-circle custom-border pointer">
+                <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
+                    alt="user" width="40px" height="40px" class="rounded-circle custom-border pointer">
+                <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
+                    alt="user" width="40px" height="40px" class="rounded-circle custom-border pointer">
+                <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
+                    alt="user" width="40px" height="40px" class="rounded-circle custom-border pointer">
+                <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
+                    alt="user" width="40px" height="40px" class="rounded-circle custom-border pointer">
+                <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
+                    alt="user" width="40px" height="40px" class="rounded-circle custom-border pointer">
+                <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
+                    alt="user" width="40px" height="40px" class="rounded-circle custom-border pointer">
+                <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
+                    alt="user" width="40px" height="40px" class="rounded-circle custom-border pointer">
+                <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
+                    alt="user" width="40px" height="40px" class="rounded-circle custom-border pointer">
+                <img src="https://media.travelmag.vn/files/thuannguyen/2020/04/25/cach-chup-anh-dep-tai-da-lat-1-2306.jpeg"
+                    alt="user" width="40px" height="40px" class="rounded-circle custom-border pointer">
+            </div>
 
-</div>
-<div class="post-status">
+        </div>
+    </div>
+    <div class="sidebar-right">
 
+    </div>
 </div>

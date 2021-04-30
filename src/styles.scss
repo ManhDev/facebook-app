@@ -29,6 +29,7 @@ h6,
 p {
   margin: 0 !important;
   padding: 0 !important;
+  line-height: 1.2 !important;
 }
 
 button {
@@ -61,4 +62,13 @@ button {
       background: rgb(230, 230, 230);
     }
   }
+}
+.pointer {
+  cursor: pointer;
+}
+.border-radius {
+  border-radius: 10px;
+}
+.padding-input-button {
+  padding: 1.375rem 0.75rem;
 }

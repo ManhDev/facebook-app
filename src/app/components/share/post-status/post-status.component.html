@@ -1,1 +1,20 @@
-<p>post-status works!</p>
+<div class="post-status shadow-sm bg-white rounded py-2 p-3">
+    <div class="d-flex align-items-center border-bottom pb-2 mb-3">
+        <img [src]="user.image" alt="" width="40px" height="40px" class="rounded-circle pointer">
+        <div class="thinking rounded-pill ml-2 w-100 px-3 pointer">{{user.name}} ơi, bạn đang nghĩ gì thế?</div>
+    </div>
+    <div class="d-flex align-items-center justify-content-around">
+        <button class="btn btn-light d-flex align-items-center">
+            <span class="material-icons mr-2 text-danger"> video_camera_front</span>
+            <p>Video trực tiếp</p>
+        </button>
+        <button class="btn btn-light d-flex align-items-center">
+            <span class="material-icons mr-2 text-success">broken_image</span>
+            <p>Ảnh/Video</p>
+        </button>
+        <button class="btn btn-light d-flex align-items-center">
+            <span class="material-icons mr-2 text-warning">sentiment_very_satisfied</span>
+            <p>Cảm xúc/Hoạt động</p>
+        </button>
+    </div>
+</div>
