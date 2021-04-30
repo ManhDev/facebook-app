@@ -28,37 +28,41 @@ import { HomeComponent } from './components/screen/home/home.component';
 import { SignUpComponent } from './components/screen/sign-up/sign-up.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DialogLoadingComponent,
-    FormPostsComponent,
-    LoginComponent,
-    SidebarComponent,
-    FooterComponent,
-    NotFoundComponent,
-    ProfileComponent,
-    CommunityComponent,
-    NewsComponent,
-    ArticleComponent,
-    ScrollDirective,
-    NavBarComponent,
-    ComingSoonComponent,
-    PostStatusComponent,
-    AddCommentComponent,
-    LikeFunctionComponent,
-    CommentFunctionComponent,
-    HomeComponent,
-    SignUpComponent
-  ],
-  imports: [
-    BrowserModule,
-    MatBadgeModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        DialogLoadingComponent,
+        FormPostsComponent,
+        LoginComponent,
+        SidebarComponent,
+        FooterComponent,
+        NotFoundComponent,
+        ProfileComponent,
+        CommunityComponent,
+        NewsComponent,
+        ArticleComponent,
+        ScrollDirective,
+        NavBarComponent,
+        ComingSoonComponent,
+        PostStatusComponent,
+        AddCommentComponent,
+        LikeFunctionComponent,
+        CommentFunctionComponent,
+        HomeComponent,
+        SignUpComponent
+    ],
+    imports: [
+        BrowserModule,
+        MatBadgeModule,
+        HttpClientModule,
+        ReactiveFormsModule,
+<<<<<<< HEAD
+        BrowserAnimationsModule,
+        AppRoutingModule
+=======
+    BrowserAnimationsModule, AppRoutingModule
+>>>>>>> cef32636aa2c83006b49cf90cf0209623a473642
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
