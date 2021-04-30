@@ -55,12 +55,8 @@ import { SignUpComponent } from './components/screen/sign-up/sign-up.component';
         MatBadgeModule,
         HttpClientModule,
         ReactiveFormsModule,
-<<<<<<< HEAD
         BrowserAnimationsModule,
         AppRoutingModule
-=======
-    BrowserAnimationsModule, AppRoutingModule
->>>>>>> cef32636aa2c83006b49cf90cf0209623a473642
     ],
     providers: [],
     bootstrap: [AppComponent]
